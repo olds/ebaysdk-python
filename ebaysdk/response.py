@@ -136,6 +136,7 @@ class Response(object):
     def __init__(self, obj, verb=None, list_nodes=[], datetime_nodes=[], parse_response=True):
         self._list_nodes = copy.copy(list_nodes)
         self._obj = obj
+        self._dom = None
 
         if parse_response:
             try:
