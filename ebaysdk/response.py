@@ -137,6 +137,7 @@ class Response(object):
         self._list_nodes = copy.copy(list_nodes)
         self._obj = obj
         self._dom = None
+        self._dict = {}
 
         if parse_response:
             try:
